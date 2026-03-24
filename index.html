@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie's Portfolio</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #fff3d1;
+    }
+
+    nav {
+        background-color: rgb(247, 200, 46);
+        position: sticky;
+        top: 0;
+        border-top: 2px solid rgba(0,0,0,0.2);
+        border-bottom: 2px solid rgba(0,0,0,0.2);
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    nav a {
+        color: rgb(180, 13, 13);
+        text-decoration: none;
+        margin-right: 100px;
+        margin-left: 100px;
+        font-size: 18px;
+        font-weight: bold;
+}
+
+    a:hover {
+        color: blue;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+
+    section {
+        padding: 50px;
+        margin: 20px auto;
+        background: linear-gradient(200deg, #ffffff 25%, #B2D1F7 100%);
+        font-size: 16px;
+        border: 3px solid #000;    
+         border-radius: 15px;       
+         max-width: 1050px;           
+    }
+
+    li {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #2763c4;
+        background: linear-gradient(90deg, rgba(39, 99, 196, 1) 0%, rgba(124, 180, 214, 1) 22%, rgba(255, 255, 255, 1) 50%, rgba(235, 227, 89, 1) 77%, rgba(209, 150, 77, 1) 100%);
+        color: #040038;
+        padding: 30px;
+        text-align: left;
+        text-shadow: 1px 1px 2px rgba(13, 0, 80, 0.3);
+    }
+
+    .header img {
+        border-radius: 50%;
+        border: 4px solid;
+        box-shadow: 0 0 0 4px #fdfcf8;
+    }
+
+    .status-bars-inline {
+        display: flex;      /* put bars in a row */
+        gap: 10px;          /* space between bars */
+        margin-top: 20px;
+    }
+
+    .bar {
+        display: inline-flex;        /* hugs text width */
+        padding: 5px 15px;           /* add space around text */
+        background: #b8c5ff;
+        background: radial-gradient(circle, rgb(210, 218, 255) 50%, rgba(255, 233, 222, 1) 100%);
+        border-radius: 12px;
+        border: 2px solid #585757;
+        align-items: center;         /* vertical center */
+        justify-content: center;     /* horizontal center */
+        color: #03045e;
+        font-weight: bold;
+        font-size: 14px;
+        white-space: nowrap;         /* keeps text in one line */
+    }
+
+    .bar-text {
+        position: absolute;          /* place text inside bar */
+        left: 10px;                  /* padding from left */
+        top: 50%;                    
+        transform: translateY(-50%); /* center vertically */
+        color: #03045e;                
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    a {
+        color: rgb(73, 152, 226);
+    }
+
+    footer {
+        background-color: #fff3d1;
+        color: #03045e;
+        font-family: 'Trebuchet MS', sans-serif;
+        padding: 20px;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    footer p {
+        color: #03045e;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <img src="pics/pfp.jpg" alt="profile picture" width="200" height="200">
+        <div class="header-text">
+             <h1>Welcome To My Portfolio!</h1>
+            <h2>Jessieca Mae D. Milan</h2>
+            <p>2nd Year BSIT-MAA student of NU-Manila</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#aboutme">About Me!</a>
+        <a href="hobbies.html">My Hobbies</a>
+        <a href="websites.html" target="_self">My Favorite Websites</a>
+    </nav>
+
+    <section id="aboutme">
+        <h1><strong><i>About</i></strong></h1>
+        <P>
+            Hello! I am Jessieca Mae D. Milan, though I prefer to go by Jessie. 
+            I am currently a second-year BSIT-MAA student at National University Manila with a strong passion for both digital art and frontend development. <br>
+            <br>With over eight years of experience as a digital artist, I’ve developed a keen eye for design, composition, and visual storytelling.
+             I am now channeling that creative foundation into web development, where I aim to build visually engaging and user-friendly interfaces. <br>
+            <br>While I am still in the early stages of my journey in web development, I am highly motivated to grow, continuously improve my skills,
+             and explore new opportunities that challenge and expand my capabilities.
+        </P>
+
+        <div class="status-bars-horizontal">
+            <div class="bar">
+            <span>Writer</span>
+            </div>
+            <div class="bar">
+            <span>OC Artist</span>
+            </div>
+            <div class="bar">
+            <span>Aspiring Frontend Developer</span>
+            </div>
+            <div class="bar">
+            <span>Multifandom Enjoyer</span>
+            </div>
+            <div class="bar">
+            <span>Average Coding Skills</span>
+            </div>
+            <div class="bar">
+            <span>Procrastinator-Perfectionist</span>
+            </div>
+        </div>
+        </section>
+
+    <footer>
+        <p><b><i>Contact me
+        <br>Email: milanjm@students.national-u.edu.ph
+    <br> Number: 09602577909</i></b></p>
+    </footer>
+
+</body>
+</html>
