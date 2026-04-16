@@ -1,170 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jessie's Portfolio</title>
-</head>
-
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        margin: 0;
-        font-family: 'Trebuchet MS', sans-serif;
-        background-color: #fff3d1;
-    }
-
-    nav {
-        background-color: rgb(247, 200, 46);
-        position: sticky;
-        top: 0;
-        border-top: 2px solid rgba(0,0,0,0.2);
-        border-bottom: 2px solid rgba(0,0,0,0.2);
-        text-align: center;
-        width: 100%;
-        padding: 15px;
-    }
-
-    nav a {
-        color: rgb(180, 13, 13);
-        text-decoration: none;
-        margin-right: 100px;
-        margin-left: 100px;
-        font-size: 18px;
+  </head>
+ 
+  <style>
+   summary {
+        cursor: pointer;
+        color: rgb(3, 43, 67);
         font-weight: bold;
-}
-
-    a:hover {
-        color: blue;
-        letter-spacing: 2px;
+        font-size: 22px;
         transition: 0.3s;
     }
 
-    section {
-        padding: 50px;
-        margin: 20px auto;
-        background: linear-gradient(200deg, #ffffff 25%, #B2D1F7 100%);
-        font-size: 16px;
-        border: 3px solid #000;    
-         border-radius: 15px;       
-         max-width: 1050px;           
+   summary:hover {
+        color: rgb(19, 111, 99);
+        letter-spacing: 2px;
+        transition: 0.3s;
+        transform: translate3d(5px);
     }
 
-    li {
-        text-align: left;
-        margin-bottom: 10px;
-        font-size: 16px;
+    .section-img {
+        height: 300px;
+        width: auto;
+        border: 1px solid rgb(3, 43, 67);
+        border-radius: 10px;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        flex-shrink: 0;
+        margin-top: 20px;       
     }
 
-    p {
-        font-size: 16px;
+     .hobby-content {
+      display: flex;
+      flex: 1;
+      min-width: 0;
+      align-items: center;
+      gap: 20px;
     }
 
-    .header {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        background: #2763c4;
-        background: linear-gradient(90deg, rgba(39, 99, 196, 1) 0%, rgba(124, 180, 214, 1) 22%, rgba(255, 255, 255, 1) 50%, rgba(235, 227, 89, 1) 77%, rgba(209, 150, 77, 1) 100%);
-        color: #040038;
-        padding: 30px;
-        text-align: left;
-        text-shadow: 1px 1px 2px rgba(13, 0, 80, 0.3);
+    .tv-movies .hobby-content {
+      display: block;
     }
 
-    .header img {
-        border-radius: 50%;
-        border: 4px solid;
-        box-shadow: 0 0 0 4px #fdfcf8;
+    .tv-movies .gallery {
+      width: 100%;
     }
 
-    a {
-        color: rgb(52, 55, 223);
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 40px;
+      width: 100%;
     }
 
-    footer {
-        background-color: #fff3d1;
-        color: #03045e;
-        font-family: 'Trebuchet MS', sans-serif;
-        padding: 20px;
-        padding-left: 30px;
-        text-align: left;
+    .gallery a {
+      display: block;
     }
 
-    footer p {
-        color: #03045e;
-        text-decoration: none;
-        font-size: 14px;
+    .gallery a:hover img {
+      transform: scale(1.05);
+      transition: 0.3s;
     }
 
-</style>
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 6;
+      object-fit: cover;
+      border: 1px solid rgb(3, 43, 67);
+      border-radius: 10px;
+    }
 
-<body>
+    @media (max-width: 900px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+ 
+  </style>
+ 
+  <body>
     <header class="header">
-        <img src="pics/pfp.jpg" alt="profile picture" width="200" height="200">
-        <div class="header-text">
-             <h1>Welcome To My Portfolio!</h1>
-            <h2>Jessieca Mae D. Milan</h2>
-            <p>2nd Year BSIT-MAA student of NU-Manila</p>
-        </div>
+      <img src="pics/pfp.jpg" alt="profile picture" width="300" height="300" />
+      <div class="header-text">
+        <h3>Welcome To My Portfolio!</h3>
+        <h2>Jessieca Mae D. Milan</h2>
+        <h4>Bachelor of Science in Information Technology - specialized in Multimedia Applications</h4>
+      </div>
     </header>
-    
+ 
     <nav>
-        <a href="index.html" target="_self">About Me!</a>
-        <a href="#hobbies">My Hobbies</a>
-        <a href="websites.html" target="_self">My Favorite Websites</a>
+      <a href="index.html" target="_self">About Me!</a>
+      <a href="#hobbies">My Hobbies</a>
+      <a href="websites.html" target="_self">My Favorite Websites</a>
     </nav>
-
-    <section id="hobbies">
-        <h1><strong><i>Hobbies</i></strong></h1>
-        <ul>
-            <li>
-                <details>
-                    <summary>Drawing</summary>
-                    <p>8 years and counting, mainly focusing on character concepts and design. Main programs used are IbispaintX and Canva.</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Writing</summary>
-                    <p>Only until recently, i've been dabbling in writing short stories and making characters feel real to others.
-                        Reading is also included, mainly fanfiction and original works on AO3.
-                    </p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Cooking</summary>
-                    <p>I learned from my mother how to prepare and cook many of my family’s favorite home-cooked meals.</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Gaming</summary>
-                    <p>I mainly play mobile games like The Battle Cats, Balatro, Among Us, Undertale/Deltarune, as well as various puzzle games.</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Watching TV shows and Movies</summary>
-                    <p>Current favorites:</p>
-                    <ul>
-                        <li>TV Shows: The Pitt, Invincible, The Amazing Digital Circus, Frieren: Beyond Journey's End</li>
-                        <li>Movies: Iron Lung, Wolfwalkers, Trolls 3: Band Together, The Wild Robot</li>
-                    </ul>
-                </details>
-        </ul>
+ 
+   <section id="hobbies">
+    <h1>
+        <strong><i>Hobbies</i></strong>
+    </h1>
     </section>
 
- 
-    <footer>
-        <p><b><i>Contact me
-        <br>Email: milanjm@students.national-u.edu.ph
-    <br> Number: 09602577909</i></b></p>
-    </footer>
+      <section class="drawing">
+        <details>
+          <summary>Drawing</summary>
+            <div class="hobby-content">
+              <img src="pics/art.jpg" alt="drawing picture" class="section-img"/>
+                <h4>
+                    8 years and counting, mainly focusing on character concepts and design.
+                    The main programs I use are IbispaintX and Canva.
+                    <br>This one shows the summary of my work! 
+                    <br>I don't get to draw as much as I used to, or even do as much detail than before, but I still enjoy it a lot. 
+                </h4>
+            </div>
+        </details>
+    </section>
 
-</body>
+    <section class="writing">
+        <details>
+        <summary>Writing</summary>
+           <div class="hobby-content"> 
+              <img src="pics/writing.png" alt="writing picture" class="section-img"/>   
+              <h4>
+                  Only until recently, i've been dabbling in writing short stories and
+                  making characters feel real to others. Reading is also included,
+                  mainly fanfiction and original works on AO3.
+              </h4>
+           </div>
+        </details>
+    </section>
+
+    <section class="cooking">
+        <details>
+        <summary>Cooking</summary>
+            <div class="hobby-content">
+                <img src="pics/cooking.jpg" alt="cooking picture" class="section-img"/>
+                <h4>
+                    A skill that was drilled into me as a kid. I learned from both my mother and grandmother
+                    how to prepare and cook many of my family’s favorite home-cooked meals. I still can't fry chicken without
+                    burning it.
+                </h4>
+            </div>
+        </details>
+    </section>
+
+    <section class="gaming">
+        <details>
+        <summary>Gaming</summary>
+            <div class="hobby-content">
+              <img src="pics/gaming.png" alt="gaming picture" class="section-img"/>
+                <h4>
+                    I mainly play mobile games like The Battle Cats, Balatro, Among Us,
+                    Undertale/Deltarune, as well as various puzzle games.
+                </h4>
+            </div>
+        </details>
+    </section>
+
+    <section class="tv-movies">
+        <details>
+        <summary>Watching TV shows and Movies</summary>
+           <div class="hobby-content">
+              <h4>Current favorites:</h4>
+              <div class="gallery">
+                <a href="https://www.hbomax.com/ph/en/shows/pitt-2024/e6e7bad9-d48d-4434-b334-7c651ffc4bdf"> <img src="pics/the-pitt.jpg" alt="the pitt picture" /> </a>
+                <a href="https://www.amazon.com/INVINCIBLE-SEASON-1/dp/B08WJN83XZ"> <img src="pics/invincible.jpg" alt="invincible picture"/> </a>
+                <a href="https://www.youtube.com/watch?v=HwAPLk_sQ3w&list=PLHovnlOusNLgvAbnxluXCVB3KLj8e4QB-">  <img src="pics/tadc.webp" alt="tadc picture"/></a>
+                <a href="https://youtube.com/playlist?list=PLwLSw1_eDZl3mptgIJ-ihxCV3_Ct7CNEF&si=_8Xhbl-TymuK3kWK"> <img src="pics/frieren.jpg" alt="frieren picture"/></a>
+                <a href="https://ironlung.com/"> <img src="pics/iron-lung.jpg" alt="iron lung picture"/> </a>
+                <a href="https://tv.apple.com/us/movie/wolfwalkers/umc.cmc.amuoq00hqelfi98j0gvg641x"> <img src="pics/wolfwalkers.png" alt="wolfwalkers picture"/> </a>
+                <a href="https://www.dreamworks.com/movies/trolls-band-together"> <img src="pics/Trolls3film.jpg" alt="trolls 3 picture"/> </a>
+                <a href="https://www.dreamworks.com/movies/the-wild-robot"> <img src="pics/the-wild-robot.webp" alt="the wild robot picture"/> </a>
+                <a href="https://www.netflix.com/ph-en/title/81498621"> <img src="pics/kpop.webp" alt="kpop demon hunters picture"/> </a>
+                <a href="https://www.sonypictures.com/movies/spidermanacrossthespiderverse"> <img src="pics/atsv.jpg" alt="across the spiderverse picture"/> </a>
+              </div>
+           </div>
+        </details>
+    </section>
+    
+    <footer>
+      <p>
+        <b
+          ><i
+            >Contact me thru <br />Email: milanjm@students.national-u.edu.ph
+            <br />
+            Mobile No.: 09602577909</i
+          ></b
+        >
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,152 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessie's Portfolio</title>
 </head>
-
+ 
 <style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        margin: 0;
-        font-family: 'Trebuchet MS', sans-serif;
-        background-color: #fff3d1;
-    }
-
-    nav {
-        background-color: rgb(247, 200, 46);
-        position: sticky;
-        top: 0;
-        border-top: 2px solid rgba(0,0,0,0.2);
-        border-bottom: 2px solid rgba(0,0,0,0.2);
-        text-align: center;
+    .site-grid {
         width: 100%;
-        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
     }
 
-    nav a {
-        color: rgb(180, 13, 13);
+    .site-card {
+        display: block;
         text-decoration: none;
-        margin-right: 100px;
-        margin-left: 100px;
-        font-size: 18px;
-        font-weight: bold;
-}
-
-    a:hover {
-        color: blue;
-        letter-spacing: 2px;
+        color: inherit;
+        background: #fcefdc;
+        background: linear-gradient(135deg,rgba(252, 239, 220, 1) 75%, rgba(104, 161, 155, 1) 100%);
+        border-radius: 15px;
+        overflow: hidden;
+        border: 2px solid #000;
         transition: 0.3s;
     }
 
-    section {
-        padding: 50px;
-        margin: 20px auto;
-        background: linear-gradient(200deg, #ffffff 25%, #B2D1F7 100%);
-        font-size: 16px;
-        border: 3px solid #000;    
-         border-radius: 15px;       
-         max-width: 1050px;           
+    .site-card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
     }
 
-    li {
-        text-align: left;
-        margin-bottom: 10px;
-        font-size: 16px;
+    .site-card h3 {
+        font-size: 24px;
+        margin: 10px;
     }
 
-    p {
-        font-size: 16px;
+    .site-card p {
+        margin: 0 10px 15px;
     }
 
-    .header {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        background: #2763c4;
-        background: linear-gradient(90deg, rgba(39, 99, 196, 1) 0%, rgba(124, 180, 214, 1) 22%, rgba(255, 255, 255, 1) 50%, rgba(235, 227, 89, 1) 77%, rgba(209, 150, 77, 1) 100%);
-        color: #040038;
-        padding: 30px;
-        text-align: left;
-        text-shadow: 1px 1px 2px rgba(13, 0, 80, 0.3);
+    .site-card:hover {
+        letter-spacing: 2px;
+        transition: 0.3s;
+        transform: translateY(-5px);
     }
-
-    .header img {
-        border-radius: 50%;
-        border: 4px solid;
-        box-shadow: 0 0 0 4px #fdfcf8;
-    }
-
-    a {
-        color: rgb(52, 55, 223);
-    }
-
-    footer {
-        background-color: #fff3d1;
-        color: #03045e;
-        font-family: 'Trebuchet MS', sans-serif;
-        padding: 20px;
-        padding-left: 30px;
-        text-align: left;
-    }
-
-    footer p {
-        color: #03045e;
-        text-decoration: none;
-        font-size: 14px;
-    }
-
 </style>
-
+ 
 <body>
     <header class="header">
-        <img src="pics/pfp.jpg" alt="profile picture" width="200" height="200">
+        <img src="pics/pfp.jpg" alt="profile picture" width="300" height="300">
         <div class="header-text">
-             <h1>Welcome To My Portfolio!</h1>
+             <h3>Welcome To My Portfolio!</h3>
             <h2>Jessieca Mae D. Milan</h2>
-            <p>2nd Year BSIT-MAA student of NU-Manila</p>
+            <h4>Bachelor of Science in Information Technology - specialized in Multimedia Applications</h4>
         </div>
     </header>
-    
+   
     <nav>
         <a href="index.html" target="_self">About Me!</a>
         <a href="hobbies.html" target="_self">My Hobbies</a>
         <a href="#favwebs">My Favorite Websites</a>
     </nav>
-
+ 
     <section id="favwebs">
-        <h1><strong><i>My Favorite Websites</i></strong></h1>
-        <ul>
-            <li> <p>Recent Works:</p>
-                    <ol>
-                        <li><a href="https://docs.google.com/document/d/1z76eGRf5XEsPQVzLbaNVqxvsENsrhEg5IUk4Ttpof4E/edit?usp=sharing">My first try at writing</a></li>
-                         <li><a href="https://docs.google.com/document/d/1ckFMItB1D88k1yewshDYOBmAlJAV3vrur8cK5zKV1ww/edit?usp=sharing">Short monologue-like story</a></li>
-                         <li><a href="https://docs.google.com/document/d/1pW1wTC_cTidPkX41tfPRAUW-CPrMSaheiJQ2zHqDMRc/edit?usp=sharing">Most recent story</a></li>
-                    </ol>
-            </li>
-            <li><p>Recent Rotation of Reads:</p>
-                    <ol>
-                        <li><a href="https://archiveofourown.org/works/56059690/chapters/142385026">Great Decisions by Rytheoneandonly</a></li>
-                         <li><a href="https://archiveofourown.org/series/3941989">It's like you're my mirror (series) by Rytheoneandonly</a></li>
-                         <li><a href="https://archiveofourown.org/works/53057788/chapters/134236777">A Little Winter Miracle [ON HIATUS] by LextheBean</a></li>
-                    </ol>
-            </li>
-            <li><a href="https://jessiedoesstuffs.tumblr.com/?source=share">My Tumblr Site</a></li>
-            <li><a href="https://cara.app/xjessiedrawsx/all">My Cara Site</a></li>
-            <li><a href="https://www.instagram.com/xjessie_drawsx?igsh=dHFkM2ppeHNqOXh2">My Instagram Site <i>(check my work out here!)</i></a></li>
-            <li><a href="https://youtube.com/playlist?list=PLwLSw1_eDZl3mptgIJ-ihxCV3_Ct7CNEF&si=_8Xhbl-TymuK3kWK">Frieren: Beyond Journey's End</a></li>
-        </section>
+    <h1><strong><i>My Favorite Websites</i></strong></h1>
+    </section>
 
+    <section>
+        <div class="site-grid">
+            <!-- Writing Works -->
+            <a href="https://docs.google.com/document/d/1z76eGRf5XEsPQVzLbaNVqxvsENsrhEg5IUk4Ttpof4E/edit?usp=sharing" target="_blank" class="site-card">
+            <img src="pics/first-writing.png">
+            <h3>My First Writing Attempt</h3>
+            <p>My first try at writing and storytelling.</p>
+            </a>
 
+            <a href="https://docs.google.com/document/d/1ckFMItB1D88k1yewshDYOBmAlJAV3vrur8cK5zKV1ww/edit?usp=sharing" target="_blank" class="site-card">
+            <img src="pics/second-writing.png">
+            <h3>Short Monologue Story</h3>
+            <p>A more refined attempt at character expression.</p>
+            </a>
+
+            <a href="https://docs.google.com/document/d/1pW1wTC_cTidPkX41tfPRAUW-CPrMSaheiJQ2zHqDMRc/edit?usp=sharing" target="_blank" class="site-card">
+            <img src="pics/third-writing.png">
+            <h3>Most Recent Story</h3>
+            <p>My latest work, featuring a character made by a friend.</p>
+            </a>
+
+            <!-- Reading -->
+            <a href="https://archiveofourown.org/works/56059690/chapters/142385026" target="_blank" class="site-card">
+            <img src="pics/great-decisions.png">
+            <h3>Great Decisions</h3>
+            <p>An amazing piece of literature to read, and one of my current favorite fanfics.</p>
+            </a>
+
+            <a href="https://archiveofourown.org/series/3941989" target="_blank" class="site-card">
+            <img src="pics/mirror-series.png">
+            <h3>It's Like You're My Mirror Series</h3>
+            <p>A series of reads I keep coming back to.</p>
+            </a>
+
+            <a href="https://archiveofourown.org/series/4016092" target="_blank" class="site-card">
+            <img src="pics/brother-series.png">
+            <h3>Whether You're a Brother Series</h3>
+            <p>A fun what-if series that I enjoy rereading once in a while.</p>
+            </a>
+
+            <!-- Your Platforms -->
+            <a href="https://jessiedoesstuffs.tumblr.com/?source=share" target="_blank" class="site-card">
+            <img src="pics/tumblr.png">
+            <h3>My Tumblr</h3>
+            <p>Where I post sometimes and reblog random content.</p>
+            </a>
+
+            <a href="https://cara.app/xjessiedrawsx/all" target="_blank" class="site-card">
+            <img src="pics/cara.png">
+            <h3>My Cara</h3>
+            <p>My art-focused platform, made to look like a social media art portfolio.</p>
+            </a>
+
+            <a href="https://www.instagram.com/xjessie_drawsx?igsh=dHFkM2ppeHNqOXh2" target="_blank" class="site-card">
+            <img src="pics/insta.png">
+            <h3>My Instagram</h3>
+            <p>Where I'm most active. Check out my recent artworks here!</p>
+            </a>
+
+        </div>
+    </section>
+    
     <footer>
-        <p><b><i>Contact me
+        <p><b><i>Contact me thru
         <br>Email: milanjm@students.national-u.edu.ph
-    <br> Number: 09602577909</i></b></p>
+    <br> Mobile No.: 09602577909</i></b></p>
     </footer>
-
+ 
 </body>
 </html>

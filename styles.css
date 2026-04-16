@@ -1,0 +1,132 @@
+ html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+ 
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", sans-serif;
+      background-color: rgb(63, 136, 197);
+      position: relative;
+    }
+
+     .header {
+      display: flex;
+      height: 500px;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 20px;
+      background: #2763c4;
+      background: linear-gradient(
+        0deg,
+        rgba(39, 99, 196, 1) 0%,
+        rgba(124, 180, 214, 1) 22%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(235, 227, 89, 1) 77%,
+        rgba(209, 150, 77, 1) 100%
+      );
+      color: #040038;
+      padding: 30px;
+      text-align: left;
+      text-shadow: 1px 1px 2px rgba(13, 0, 80, 0.3);
+    }
+
+    .header-text {
+      margin-bottom: 70px;
+    }
+ 
+    .header img {
+      border-radius: 50%;
+      border: 4px solid;
+      box-shadow: 0 0 0 4px #fdfcf8;
+      position: relative;
+      margin: 20px;
+    }
+ 
+    nav {
+        background-color: rgb(39, 99, 196);
+        position: sticky;
+        top: 0;
+        border-bottom: rgb(3, 43, 67) solid 3px;
+        width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: rgb(255, 186, 8);
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+ 
+    a:hover {
+      color: rgb(208, 0, 0);
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+ 
+    section {
+      padding: 50px;
+      margin: 40px auto;
+      max-width: 1550px;
+      width: 95%;
+      background: linear-gradient(200deg, #ffffff 25%, #b2d1f7 100%);
+      font-size: 16px;
+      border: 3px solid #000;
+      border-radius: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+ 
+    li {
+      text-align: left;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h4{
+      font-size: 22px;
+    }
+
+     a {
+      color: rgb(19, 111, 99);
+    }
+ 
+    footer {
+      background-color: rgb(63, 136, 197);
+      font-family: "Trebuchet MS", sans-serif;
+      padding-left: 70px;
+      text-align: left;
+    }
+ 
+    footer p {
+      color: #03045e;
+      text-decoration: none;
+      font-size: 18px;
+    }
